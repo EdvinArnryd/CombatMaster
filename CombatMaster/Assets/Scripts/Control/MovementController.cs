@@ -34,5 +34,14 @@ public class MovementController : MonoBehaviour
         {
             transform.position -= Vector3.left * Time.deltaTime * moveSpeed;
         }
+        
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            moveSpeed = 5f;
+        }
+        else
+        {
+            moveSpeed = 2f;
+        }
     }
 }
