@@ -20,19 +20,19 @@ public class MovementController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.forward * Time.deltaTime * moveSpeed;
+            transform.position += transform.forward * Time.deltaTime * moveSpeed;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position -= Vector3.forward * Time.deltaTime * moveSpeed;
+            transform.position -= transform.forward * Time.deltaTime * moveSpeed;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * Time.deltaTime * moveSpeed;
+            transform.position -= transform.right * Time.deltaTime * moveSpeed;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position -= Vector3.left * Time.deltaTime * moveSpeed;
+            transform.position += transform.right * Time.deltaTime * moveSpeed;
         }
         
         if(Input.GetKey(KeyCode.LeftShift))

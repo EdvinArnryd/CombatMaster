@@ -17,10 +17,10 @@ public class MouseLook : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
 
-        // Pitch (up/down)
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f); // prevents flipping
-        transform.localRotation = Quaternion.Euler(0f, xRotation, 0f);
+        // // Pitch (up/down)
+        // xRotation -= mouseY;
+        // xRotation = Mathf.Clamp(xRotation, -90f, 90f); // prevents flipping
+        // transform.rotation = Quaternion.Euler(0f, xRotation, 0f);
 
         // Yaw (left/right)
         playerBody.Rotate(Vector3.up * mouseX);
