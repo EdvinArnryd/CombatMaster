@@ -6,6 +6,7 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
 
     float xRotation = 0f;
+    private float mouseSpeed = 2f;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class MouseLook : MonoBehaviour
         // transform.rotation = Quaternion.Euler(0f, xRotation, 0f);
 
         // Yaw (left/right)
-        playerBody.Rotate(Vector3.up * mouseX);
+        playerBody.Rotate(Vector3.up * mouseX * mouseSpeed);
     }
 }
 
