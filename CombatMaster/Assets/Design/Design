@@ -1,0 +1,29 @@
+//This is a design document. Features are defined here and their status
+
+
+Features:
+Enemy AI
+Player Animations
+Player Attack
+Player unique movement
+Sound effects
+Visual effects
+UI
+
+
+
+
+Look up/Research:
+Find assets:
+Character
+Animations
+Sound effects
+UI
+
+Create assets:
+Visual effects???
+
+Research:
+Research VFXD
+Resarch animations and attacks(Probably is simple, just trigger the animation, right? Or trigger an attack state)
+Research making cool and interactive UI
